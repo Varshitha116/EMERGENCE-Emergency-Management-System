@@ -1,0 +1,5 @@
+{
+    "java.project.referencedLibraries": [
+        "backend/src/lib/**/*.jar"
+    ]
+}
