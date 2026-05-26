@@ -45,7 +45,27 @@ EMERGENCE is a modular emergency management system developed using Java, JDBC, M
 
 ## Screenshots
 
-(Add screenshots here)
+### Home Page
+![Home](screenshots/home.png)
+
+### Login Page
+![Login](screenshots/login.png)
+
+### Registration Page
+![Register](screenshots/register.png)
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Contact Management
+![Contacts](screenshots/contacts.png)
+
+### Emergency Alerts
+![Alerts](screenshots/alerts.png)
+
+### Backend Execution
+![Backend](screenshots/backend.png)
+
 
 ---
 
