@@ -9,6 +9,8 @@ public class AlertService {
     public void triggerEmergency(int userId,
                                  String alertType,
                                  String location) {
+                                               
+     System.out.println("Sending alert to emergency contacts...");
 
         dao.createAlert(userId, alertType, location);
 

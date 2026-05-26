@@ -1,27 +1,61 @@
 body {
-    font-family: Arial;
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
     width: 400px;
-    margin: auto;
-    margin-top: 80px;
+    margin: 80px auto;
     background: white;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
 
-button {
-    background-color: red;
-    color: white;
-    padding: 10px;
-    border: none;
-    width: 100%;
+h1, h2 {
+    text-align: center;
+    color: #d63031;
 }
 
 input, select {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #d63031;
+    color: white;
+    border: none;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #b71c1c;
+}
+
+.dashboard {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.1);
+}
+
+.alert-btn {
+    background-color: red;
 }

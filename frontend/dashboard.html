@@ -1,31 +1,150 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Dashboard</title>
+    <title>EMERGENCE Dashboard</title>
+    
+
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<div class="container">
+<div class="dashboard">
 
-<h2>Emergency Dashboard</h2>
+    <h1>EMERGENCE Dashboard</h1>
+    <div style="display:flex; gap:20px; margin-bottom:20px;">
 
-<button>SOS ALERT</button>
+    <div class="card" style="flex:1; text-align:center;">
+        <h2>Total Alerts</h2>
+        <h1 id="alertCount">0</h1>
+    </div>
 
-<br><br>
+    <div class="card" style="flex:1; text-align:center;">
+        <h2>Emergency Contacts</h2>
+        <h1 id="contactCount">0</h1>
+    </div>
 
-<select>
-    <option>Medical Emergency</option>
-    <option>Accident</option>
-    <option>Fire</option>
-    <option>Women Safety</option>
-</select>
-
-<br><br>
-
-<input type="text" placeholder="Enter Current Location">
+    <div class="card" style="flex:1; text-align:center;">
+        <h2>Status</h2>
+        <h1 style="color:green;">SAFE</h1>
+    </div>
 
 </div>
+
+    <div class="card">
+
+        <h2>User Information</h2>
+
+        <p><b>Name:</b> Varshitha</p>
+
+        <p><b>Status:</b> Safe</p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Emergency Actions</h2>
+
+        <button onclick="triggerMedicalEmergency()">
+            Trigger Medical Emergency
+        </button>
+
+        <button class="alert-btn"
+                onclick="sendSOS()">
+            Send SOS Alert
+        </button>
+
+        <button onclick="viewContacts()">
+            View Emergency Contacts
+        </button>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Emergency Contacts</h2>
+
+        <input type="text"
+               id="contactName"
+               placeholder="Enter Name">
+
+        <input type="text"
+               id="contactRelation"
+               placeholder="Enter Relation">
+
+        <input type="text"
+               id="contactPhone"
+               placeholder="Enter Phone Number">
+
+        <button onclick="addContact()">
+            Add Contact
+        </button>
+
+        <br><br>
+
+        <table id="contactTable"
+               width="100%"
+               border="1"
+               cellspacing="0"
+               cellpadding="10">
+
+            <thead>
+
+                <tr>
+                    <th>Name</th>
+                    <th>Relation</th>
+                    <th>Phone</th>
+                    <th>Action</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+            </tbody>
+
+        </table>
+
+    </div>
+    <div class="card">
+
+    <h2>Recent Emergency Alerts</h2>
+
+    <table width="100%"
+           border="1"
+           cellspacing="0"
+           cellpadding="10">
+
+        <tr>
+            <th>Alert Type</th>
+            <th>Location</th>
+            <th>Status</th>
+        </tr>
+
+        <tr>
+            <td>Medical Emergency</td>
+            <td>Hyderabad</td>
+            <td style="color:red;">ACTIVE</td>
+        </tr>
+
+        <tr>
+            <td>Road Accident</td>
+            <td>Warangal</td>
+            <td style="color:orange;">RESOLVED</td>
+        </tr>
+            <tbody id="alertTableBody">
+
+    </tbody>
+
+
+    </table>
+
+</div>
+
+</div>
+
+<script src="js/script.js"></script>
 
 </body>
 </html>
